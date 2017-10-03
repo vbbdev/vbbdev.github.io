@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MRHYTHM</title>
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <script type="text/javascript" src="./jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/nexusUI.js"></script>
+    <script type="text/javascript" src="./tone/Tone.js"></script>
+    <script type="text/javascript" src="./scripts/load.js"></script>
+    <script type="text/javascript" src="./scripts/fx.js"></script>
+    <script type="text/javascript" src="./scripts/drums.js"></script>
+    <script type="text/javascript" src="./scripts/loop.js"></script>
+  </head>
+  
+
+  <body>
+    <div id="app">
+      <!-- logo + Effects dials-->
+      <svg class="logo" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 442.87 161.18"><defs><style>.cls-1{fill:#f7625b;}.cls-2{fill:#44453f;}.cls-3{fill:none;}</style></defs><title>Untitled-4</title><path class="cls-1" d="M70.3,28.82V91.06H54.43V57.76L39,91.06H30.46L15,57.56V91.06H-.87V28.82H16.35L34.72,68.45,53.18,28.82Z" transform="translate(0.87 -28.82)"/><path class="cls-2" d="M128.61,91.06H110.76L96.24,68.24H92.61V91.06H76.74V28.82h27.7c11.1,0,19.09,8.82,19.09,19.61,0,8.51-5,15.46-12.14,17.95ZM108.27,49a6.21,6.21,0,0,0-6.43-6.43H92.61V55.48h9.23A6.21,6.21,0,0,0,108.27,49Z" transform="translate(0.87 -28.82)"/><path class="cls-2" d="M187.79,28.82V91.06H171.91V66.79H149.5V91.06H133.63V28.82H149.5V53h22.41V28.82Z" transform="translate(0.87 -28.82)"/><path class="cls-2" d="M230,61.7V91.06H214.14V61.81l-21.89-33h17.64l12.24,19.5,12.24-19.5H251.8Z" transform="translate(0.87 -28.82)"/><path class="cls-2" d="M302,42.62H286.76V91.06H271V42.62H255.74V28.82H302Z" transform="translate(0.87 -28.82)"/><path class="cls-2" d="M361.94,28.82V91.06H346.07V66.79H323.66V91.06H307.78V28.82h15.87V53h22.41V28.82Z" transform="translate(0.87 -28.82)"/><path class="cls-2" d="M442,28.82V91.06H426.1V57.76l-15.46,33.3h-8.51L386.67,57.56V91.06H370.8V28.82H388l18.36,39.63,18.47-39.63Z" transform="translate(0.87 -28.82)"/><rect class="cls-3" x="0.87" y="82.18" width="79" height="79"/><rect class="cls-2" x="302.47" y="82.18" width="65" height="65"/><rect class="cls-2" x="227.07" y="82.18" width="65" height="65"/><rect class="cls-2" x="151.67" y="82.18" width="65" height="65"/><rect class="cls-2" x="76.27" y="82.18" width="65" height="65"/><rect class="cls-2" x="377.87" y="82.18" width="65" height="65"/><rect class="cls-1" x="0.87" y="82.18" width="65" height="65"/></svg><canvas class="fx" nx="dial" label="Distortion" > </canvas><canvas class="fx" nx="dial" label="RoomReverb"  ></canvas><canvas class="fx" nx="dial" label="Phaser" ></canvas><canvas class="fx" nx="dial" label="Delay"></canvas><canvas class="fx" nx="dial" label="Feedback"></canvas><canvas class="fx" nx="dial" label="Big Reverb"></canvas>
+      
+      <!-- sequencer + filter -->
+      <canvas nx="matrix" id="drumMatrix"></canvas><canvas nx="position" id="filterLabel"></canvas>
+      
+      <!-- volume sliders -->
+      <canvas nx="slider" class="drumVolume" id="drumVolume1"></canvas><canvas nx="slider" class="drumVolume" id="drumVolume2"></canvas><canvas nx="slider" class="drumVolume" id="drumVolume3" ></canvas><canvas nx="slider" class="drumVolume" id="drumVolume4" ></canvas>
+  
+      <!-- drum selectors -->
+      <canvas nx="tabs" class="drumSelector" id="hiHatSelector"></canvas><canvas nx="tabs" class="drumSelector" id="snareSelector"></canvas><canvas nx="tabs" class="drumSelector" id="kickSelector"></canvas><canvas nx="tabs" class="drumSelector" id="rimSelector"></canvas>
+      
+      <!-- tempo + volume control -->
+      <canvas nx="toggle" class="playButton" id="toggle1"></canvas><canvas nx="dial" class="controlDial" label="Master Volume" id="volume" min="-24" max="6"></canvas><canvas nx="dial" label="BPM"class="controlDial" id="tempo" min="60" max="220"></canvas>
+      
+      <!-- script -->
+      <script type="text/javascript" src="./scripts/mrhythm.js"></script>
+    </div>
+    <div id="desc">
+      <p>MRHYTHM is a drum machine.  Built with <a href="https://github.com/Tonejs/Tone.js">Tone.js</a> and <a href="https://nexus-js.github.io/ui/">NexusUI</a>.</p>
+    </div>
+  </body> 
+</html>

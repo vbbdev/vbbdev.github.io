@@ -1,0 +1,94 @@
+* {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+	background-color: #DDD;
+}
+
+#app {
+	left: 50%; 
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width:90%;
+	height:85%;
+	position:absolute;
+}
+
+#desc {
+	bottom: 7.5%;
+	width:90%;
+	position:absolute;
+	left: 50%; 
+	transform: translate(-50%,0);
+}
+ #desc p {
+ 	font-size: 12pt;
+ 	font-weight: 500;
+ 	color: #5E6572;
+ }
+
+#desc a:link {
+    color: #7D98A1;
+}
+
+#desc a:visited {
+    color: #7D98A1;
+}
+
+#desc a:hover {
+    color: #f7625b;
+}
+
+#desc a:active {
+    color: #f7625b;
+}
+
+canvas {
+	border-radius:0 !important;
+}
+
+#drumMatrix {
+	width:80%;
+	height:40%;
+}
+
+.drumVolume {
+	width:25%;
+	height:5%;
+}
+
+.drumSelector {
+	width:25%;
+	height:5%;
+}
+
+.controlDial {
+	margin-top:2%;
+	width:25%;
+	height:15%;
+}
+
+.playButton {
+	margin-top:2%;
+	width:50%;
+	height:15%;
+}
+
+#filterLabel {
+	width:20%;
+	height:40%;
+	padding:0.12%;
+}
+
+.logo {
+	width:22%;
+	height:13.5%;
+	border-radius:0 !important;
+	padding-bottom: 1.5%;
+}
+
+.fx {
+	width:13%;
+	height:15%;
+}
